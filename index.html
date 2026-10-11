@@ -123,6 +123,13 @@
   .gallery a:nth-child(3) { grid-column:span 3; aspect-ratio:3/4; }
   .gallery a:nth-child(4) { grid-column:span 4; }
 
+  /* BRAND */
+  .brand { display:grid; grid-template-columns:.9fr 1.1fr; gap:clamp(28px,5vw,72px); align-items:center; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:clamp(32px,5vw,56px) 0; }
+  .brand img { width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; border-radius:4px; background:#000; }
+  .brand h2 { margin-bottom:18px; }
+  .brand .quote { font-size:clamp(19px,2.2vw,24px); color:var(--ink); line-height:1.5; margin-bottom:14px; }
+  .brand .btns { margin-top:28px; display:flex; gap:12px; flex-wrap:wrap; }
+
   /* AGENDA */
   .show { display:grid; grid-template-columns:200px 1fr auto; gap:26px; align-items:center; padding:26px 0; border-bottom:1px solid var(--line); }
   .show:first-child { padding-top:0; }
@@ -183,7 +190,7 @@
     .nav-links { position:fixed; inset:68px 0 0 0; background:rgba(10,10,11,.97); flex-direction:column; justify-content:center; gap:30px; font-size:14px; display:none; }
     .open .nav-links { display:flex; }
     .open .nav { background:var(--bg); }
-    .about, .music { grid-template-columns:1fr; }
+    .about, .music, .brand { grid-template-columns:1fr; }
     .about figure { position:static; max-width:420px; }
         .contacts { grid-template-columns:repeat(2,1fr); }
     .contact:nth-child(3) { border-left:0; padding-left:0; }
@@ -309,6 +316,23 @@
       <div class="eyebrow sub">Festival appearances</div>
       <div class="tags">
         <span class="tag">EXIT Festival<small>Serbia</small></span><span class="tag">Sea Dance<small>Montenegro</small></span><span class="tag">Sea Star<small>Croatia</small></span><span class="tag">Latin Village<small>Netherlands</small></span><span class="tag">Pal Mundo<small>Netherlands</small></span><span class="tag">Latino Festival<small>Germany</small></span><span class="tag">Antillanze Fest<small>Belgium</small></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="brand">
+    <div class="wrap">
+      <div class="brand">
+        <a href="https://shemovesfirst.eu" target="_blank" rel="noopener"><img src="assets/smf-logo.jpg" alt="She Moves First logo" loading="lazy" width="900" height="676"></a>
+        <div>
+          <h2 class="display">She Moves First</h2>
+          <p class="quote">She moves first. The room follows.</p>
+          <p>KXAZANOVA’s own club night in Amsterdam. Latin house, Afrohouse, Tech house and Reggaeton at Basement, Leidseplein 19.</p>
+          <div class="btns">
+            <a class="btn fill" href="https://shemovesfirst.eu" target="_blank" rel="noopener">shemovesfirst.eu</a>
+            <a class="btn" href="https://www.instagram.com/shemovesfirst/" target="_blank" rel="noopener">@shemovesfirst</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
